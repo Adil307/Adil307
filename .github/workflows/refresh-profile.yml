@@ -1,0 +1,106 @@
+name: Refresh profile
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-profile.yml']
+permissions:
+  contents: write
+concurrency:
+  group: profile-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate profile from public data
+        shell: bash
+        run: |
+          python3 - <<'PYTHON'
+          import json, html, textwrap
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from collections import Counter
+          from datetime import datetime, timezone
+          
+          # Edit this list when your skills or learning goals change.
+          SKILLS = ['.NET Full-Stack', 'Python', 'Pandas', 'NumPy', 'SQL Server', 'PostgreSQL', 'JavaScript (Basic)', 'Data Structures', 'Machine Learning']
+          LEARNING = ['Aspiring AI Engineer', 'Machine Learning', 'Deep Learning', 'LLMs', 'Agentic AI']
+          USER = 'Adil307'
+          def fetch(path):
+              request = Request('https://api.github.com/' + path, headers={'User-Agent': 'Adil307-profile', 'Accept': 'application/vnd.github+json'})
+              with urlopen(request, timeout=30) as response:
+                  return json.load(response)
+          def panel(title, lines):
+              height = 120 + 46 * len(lines)
+              out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="{height}" viewBox="0 0 1100 {height}"><rect width="1100" height="{height}" rx="18" fill="#0b1124"/><path d="M24 1H1076" stroke="#39dcff" stroke-width="3"/><g font-family="Arial, sans-serif"><text x="40" y="58" fill="#39dcff" font-size="25" font-weight="700">{html.escape(title)}</text>']
+              for i, line in enumerate(lines):
+                  out.append(f'<text x="40" y="{111 + i*46}" fill="#e5eafa" font-size="24">{html.escape(str(line))}</text>')
+              return ''.join(out) + '</g></svg>'
+          def build(user, repos):
+              repos = [r for r in repos if not r.get('private', True)]
+              stamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+              languages = Counter(r['language'] for r in repos if r.get('language') and not r.get('fork'))
+              stars = sum(r.get('stargazers_count', 0) for r in repos if not r.get('fork'))
+              stats = [f'{len(repos)} public repositories   /   {user["followers"]} followers   /   {stars} stars', 'Primary languages across owned, non-fork public repositories:']
+              stats += textwrap.wrap('   |   '.join(f'{k}: {v}' for k,v in languages.most_common()), width=76)
+              stats += ['Refreshed: ' + stamp]
+              assets = Path('assets'); assets.mkdir(exist_ok=True)
+              skills = ['.NET Full-Stack  /  Python  /  Pandas  /  NumPy', 'SQL Server  /  PostgreSQL  /  JavaScript (Basic)', 'Data Structures  /  Machine Learning']
+              # Derive wrapping from the editable list, not from repository language guesses.
+              skills = textwrap.wrap('   /   '.join(SKILLS), width=75)
+              assets.joinpath('skills-live.svg').write_text(panel('02 / SKILLS & LEARNING', skills + ['Learning direction:'] + textwrap.wrap(' / '.join(LEARNING), width=75)), encoding='utf-8')
+              assets.joinpath('stats-live.svg').write_text(panel('03 / FROM THE FIELD', stats), encoding='utf-8')
+              recent = sorted([r for r in repos if r['name'] != USER and not r.get('fork')], key=lambda r:r.get('pushed_at') or '', reverse=True)[:5]
+              def clean(s):
+                  return html.escape(str(s or '').replace('\n', ' ')).replace('|', '&#124;').replace('[', '&#91;').replace(']', '&#93;')
+              rows = '\n'.join(f'| [{clean(r["name"])}]({r["html_url"]}) | {clean(r.get("description") or "Explore the source on GitHub.")} | {clean(r.get("language") or "—")} | {r.get("stargazers_count",0)} |' for r in recent)
+              Path('README.md').write_text(f'''<div align="center">
+          <img src="assets/hero-loop.gif" width="100%" alt="Muhammad Adil cinematic animated header" />
+          
+          # Muhammad Adil
+          **.NET Full-Stack Developer · Python & Data · Aspiring AI Engineer**
+          
+          [Explore my repositories](https://github.com/{USER}?tab=repositories)
+          </div>
+          
+          ### Building practical software. Learning intelligent systems.
+          Founder of **[AxiomBraid](https://github.com/Adil307/AxiomBraid)** and **ROHI**.  
+          Founder & Chairman of **GLCS** and **Smile of Tomorrow**.
+          
+          <img src="assets/skills-live.svg" width="100%" alt="Skills: {html.escape(', '.join(SKILLS))}. Learning: {html.escape(', '.join(LEARNING))}." />
+          
+          <img src="assets/stats-live.svg" width="100%" alt="Public GitHub statistics refreshed {stamp}" />
+          
+          *Updated {stamp}. Stars exclude forks. Language counts describe repositories, not proficiency.*
+          
+          ### Recently updated public projects
+          | Project | Description | Language | Stars |
+          | --- | --- | --- | ---: |
+          {rows}
+          
+          ---
+          **Automatic refresh:** every 6 hours (GitHub scheduling may be delayed), on changes to the updater, or manually from Actions. Only public GitHub data is fetched. Skills and learning goals are explicitly maintained in `.github/workflows/refresh-profile.yml`; they are never inferred as expertise from code.
+          ''', encoding='utf-8')
+          if __name__ == '__main__':
+              user = fetch(f'users/{USER}')
+              repos = []
+              for page in range(1, 101):
+                  batch = fetch(f'users/{USER}/repos?type=owner&per_page=100&page={page}')
+                  repos.extend(batch)
+                  if len(batch) < 100: break
+              else: raise RuntimeError('Pagination limit exceeded; preserve previous profile')
+              build(user, repos)
+          PYTHON
+      - name: Publish refreshed profile
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md assets/skills-live.svg assets/stats-live.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh public profile stats and skills'
+          git push
