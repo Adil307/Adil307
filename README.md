@@ -1,37 +1,30 @@
 <div align="center">
-
-<img src="assets/hero-loop.gif" width="100%" alt="Muhammad Adil — animated cyber developer portrait and profile header" />
+<img src="assets/hero-loop.gif" width="100%" alt="Muhammad Adil cinematic animated header" />
 
 # Muhammad Adil
+**.NET Full-Stack Developer · Python & Data · Aspiring AI Engineer**
 
-**AI Engineering · Full\-Stack Development · Community Building**
-
-[Explore repositories](https://github.com/Adil307?tab=repositories) · [Static header](assets/hero.png)
-
+[Explore my repositories](https://github.com/Adil307?tab=repositories)
 </div>
 
-<img src="assets/identity.png" width="100%" alt="Original portrait of Muhammad Adil and personal introduction" />
+### Building practical software. Learning intelligent systems.
+Founder of **[AxiomBraid](https://github.com/Adil307/AxiomBraid)** and **ROHI**.  
+Founder & Chairman of **GLCS** and **Smile of Tomorrow**.
 
-**Muhammad Adil** — Computer science student\. Community builder\. Exploring AI and building practical software\.  
-Founder & Chairman · GLCS / Smile of Tomorrow.
+<img src="assets/skills-live.svg" width="100%" alt="Skills: .NET Full-Stack, Python, Pandas, NumPy, SQL Server, PostgreSQL, JavaScript (Basic), Data Structures, Machine Learning. Learning: Aspiring AI Engineer, Machine Learning, Deep Learning, LLMs, Agentic AI." />
 
-<img src="assets/arsenal.png" width="100%" alt="Technology arsenal" />
+<img src="assets/stats-live.svg" width="100%" alt="Public GitHub statistics refreshed 2026-11-07 08:27 UTC" />
 
-**Tools:** Python · C\# · \.NET · React · FastAPI · SQL Server · Git.
+*Updated 2026-11-07 08:27 UTC. Stars exclude forks. Language counts describe repositories, not proficiency.*
 
-<img src="assets/field-report.png" width="100%" alt="Dated public GitHub statistics and repositories by primary language" />
+### Recently updated public projects
+| Project | Description | Language | Stars |
+| --- | --- | --- | ---: |
+| [BGP](https://github.com/Adil307/BGP) | Explore the source on GitHub. | C# | 0 |
+| [HeatShield-AI](https://github.com/Adil307/HeatShield-AI) | Explore the source on GitHub. | Python | 0 |
+| [AxiomBraid](https://github.com/Adil307/AxiomBraid) | An explainable, safety-first Python framework for data quality, validation, cleaning, and drift detection. | Python | 2 |
+| [Nexus](https://github.com/Adil307/Nexus) | Explore the source on GitHub. | TypeScript | 0 |
+| [CodeAlpha-Task](https://github.com/Adil307/CodeAlpha-Task) | Explore the source on GitHub. | Python | 0 |
 
-Public repositories: **9** · Followers: **1** · Repository stars: **2**.  
-Snapshot: 2026-11-06 21:14 UTC. These are public API values, not live counters. Language bars count repositories by primary language; they are not skill ratings.
-
-### Featured projects
-
-<a href="https://github.com/Adil307/BGP"><img src="assets/project-0.png" width="100%" alt="BGP — Public repository" /></a>
-
-**BGP:** A public software project — explore the source on GitHub\. 
-
-<a href="https://github.com/Adil307/GLCS-Global-Learning-Community-Of-Students-"><img src="assets/project-1.png" width="100%" alt="GLCS — Private repository" /></a>
-
-**GLCS:** Global Learning Community for Students\. Repository access is restricted to authorized collaborators\.
-
-<a href="https://github.com/Adil307?tab=repositories"><img src="assets/footer.png" width="100%" alt="Explore my repositories — let’s build something meaningful" /></a>
+---
+**Automatic refresh:** every 6 hours (GitHub scheduling may be delayed), on changes to the updater, or manually from Actions. Only public GitHub data is fetched. Skills and learning goals are explicitly maintained in `.github/workflows/refresh-profile.yml`; they are never inferred as expertise from code.
