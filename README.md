@@ -173,19 +173,21 @@ A rate-limiter policy of **100 requests per user per rolling 60 seconds** passed
 
 <sub>Third-party cards may be cached, rate-limited, or temporarily unavailable; their figures may differ because providers use different definitions and data scopes. Self-generated charts above remain the primary fallback.</sub>
 
-## 06 / GitHub Trophies
+## 06 / GitHub Milestones
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Adil307&amp;theme=algolia&amp;no-frame=true&amp;no-bg=true&amp;margin-w=15&amp;row=2&amp;column=4" alt="Dynamic GitHub trophy badges (third-party provider)" />
+  <img src="assets/milestones-live.svg" width="100%" alt="Automatically refreshed public GitHub milestone metrics" />
 </p>
+
+<sub>Metrics from the public GitHub API, refreshed about every six hours. These are **not official GitHub trophies**. This avoids an unreliable external trophy image provider.</sub>
 
 ## 07 / Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Adil307/Adil307/output/github-contribution-grid-snake-dark.svg" alt="Animated contribution snake, generated from the GitHub contribution graph" />
+  <img src="assets/snake-live.svg" width="100%" alt="Contribution snake animation, updated by GitHub Actions" />
 </p>
 
-<sub>The contribution snake appears after the first successful <code>Generate Snake</code> workflow run. It is refreshed every 12 hours while GitHub Actions is enabled.</sub>
+<sub>The local SVG starts with a readable placeholder. After the first successful **Generate Snake** workflow run, it becomes an animated contribution snake, refreshed every 12 hours.</sub>
 
 ## 08 / Engineering Highlights
 

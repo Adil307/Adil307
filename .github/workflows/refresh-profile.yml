@@ -29,13 +29,15 @@ jobs:
       - name: Build charts from public GitHub data
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/build_profile_stats.py
+        run: |
+          python scripts/build_profile_stats.py
+          python scripts/build_milestones.py
       - name: Commit refreshed chart SVGs only
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/stats-live.svg assets/languages-live.svg assets/activity-live.svg
+          git add assets/stats-live.svg assets/languages-live.svg assets/activity-live.svg assets/milestones-live.svg
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Refresh public profile charts'
           git push
