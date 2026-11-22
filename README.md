@@ -80,40 +80,22 @@ I work across **.NET full-stack development, Python, applied AI, data analysis a
 
 ## 04 / Featured Engineering Projects
 
-<table><tr>
-<td width="50%" valign="top">
+<!-- ADIL307_LIVE_PROJECTS_START -->
+<div align="center">
+  <sub>SELECTED ENGINEERING WORK &nbsp; / &nbsp; AUTO-REFRESHED PUBLIC REPO METRICS</sub>
+</div>
 
-### [AxiomBraid](https://github.com/Adil307/AxiomBraid)
+<p align="center">
+  <a href="https://github.com/Adil307/AxiomBraid"><img width="49%" src="assets/project-live-axiombraid.svg" alt="AxiomBraid — public Python data-quality repository; live stars, forks and latest code push" /></a>
+  <a href="https://github.com/Adil307/Intelligent-API-Rate-Limiter"><img width="49%" src="assets/project-live-rate-limiter.svg" alt="Intelligent API Rate Limiter — FastAPI and Redis project; live public GitHub metrics" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Adil307/HeatShield-AI"><img width="49%" src="assets/project-live-heatshield.svg" alt="HeatShield AI — evidence-grounded heat decision intelligence; live public GitHub metrics" /></a>
+  <a href="https://github.com/Adil307/BGP"><img width="49%" src="assets/project-live-bgp.svg" alt="BGP — .NET contractor, project and inventory system; live public GitHub metrics" /></a>
+</p>
 
-An explainable, safety-first Python framework for dataset inspection, data-quality scoring, controlled cleaning, schema validation and drift detection.
-
-`Python` · `Data quality` · `Testing`
-
-</td><td width="50%" valign="top">
-
-### [Intelligent API Rate Limiter](https://github.com/Adil307/Intelligent-API-Rate-Limiter)
-
-A sliding-window rate limiter, progressed from local state to Redis-backed coordination across two FastAPI instances, with documented concurrency and failure tests.
-
-`Python` · `FastAPI` · `Redis`
-
-</td></tr><tr><td width="50%" valign="top">
-
-### [HeatShield AI](https://github.com/Adil307/HeatShield-AI)
-
-Evidence-grounded urban-heat decision support with traceable prioritization, controlled recommendations and a locally grounded assistant.
-
-`Python` · `Applied AI` · `Evidence`
-
-</td><td width="50%" valign="top">
-
-### [BGP Operations System](https://github.com/Adil307/BGP)
-
-A .NET business application for project and contractor operations, inventory requests, stock management and granular permissions.
-
-`C#` · `ASP.NET Core MVC` · `SQL Server`
-
-</td></tr></table>
+<sub>Cards are generated locally in GitHub Actions from the public GitHub API, approximately every six hours (schedule timing may vary). Stars, forks, primary repository language and **last code push date** are automatically refreshed; project summaries and technology tags are carefully maintained descriptions, not AI-inferred expertise. Click a card to open its source repository.</sub>
+<!-- ADIL307_LIVE_PROJECTS_END -->
 
 <details>
 <summary><b>An experiment I learned from</b></summary>
