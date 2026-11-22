@@ -20,6 +20,22 @@
 
 <br />
 
+<!-- ADIL307_FEATURE_GRID_START -->
+<div align="center">
+  <sub>SELECTED WORK &nbsp; / &nbsp; BUILDING IN PUBLIC</sub>
+</div>
+
+<p align="center">
+  <a href="https://github.com/Adil307/Intelligent-API-Rate-Limiter"><img src="assets/rate-limiter.png" width="49%" alt="Intelligent API Rate Limiter — sliding-window quota engineering with FastAPI and Redis. Click to explore project." /></a>
+  <a href="https://github.com/Adil307/HeatShield-AI"><img src="assets/heatshield-ai.png" width="49%" alt="HeatShield AI — explainable urban heat decision intelligence. Click to explore project." /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Adil307/AxiomBraid"><img src="assets/axiombraid.png" width="49%" alt="AxiomBraid — explainable data quality toolkit for Python. Click to explore project." /></a>
+  <a href="https://glcs-global-community.adil-545.workers.dev/"><img src="assets/glcs.png" width="49%" alt="GLCS — Global Learning Community for Students. Click to visit the community." /></a>
+</p>
+<!-- ADIL307_FEATURE_GRID_END -->
+
 ## 01 / About Me
 
 <table><tr>
