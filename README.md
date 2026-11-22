@@ -1,12 +1,17 @@
 <div align="center">
-  <img src="assets/premium-banner.svg" alt="Muhammad Adil — Software Development and Applied AI Engineering" width="100%" />
+
+  <a href="https://github.com/Adil307"><img src="https://img.shields.io/badge/GITHUB-ADIL307-241026?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=9d176c&amp;color=30152e" alt="GitHub Adil307" /></a>
+  <a href="https://github.com/Adil307?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-241026?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=9d176c&amp;color=30152e" alt="Explore projects" /></a>
+  <a href="https://github.com/Adil307/AxiomBraid"><img src="https://img.shields.io/badge/AXIOMBRAID-OPEN_SOURCE-241026?style=for-the-badge&amp;logo=python&amp;logoColor=white&amp;labelColor=9d176c&amp;color=30152e" alt="AxiomBraid" /></a>
+  <a href="https://glcs-global-community.adil-545.workers.dev/"><img src="https://img.shields.io/badge/GLCS-COMMUNITY-241026?style=for-the-badge&amp;logoColor=white&amp;labelColor=9d176c&amp;color=30152e" alt="GLCS community" /></a>
 
   <br />
+  <br />
 
-  **Software Developer · Python & .NET · Applied AI Engineering**
+  <img src="assets/hero-neon.png" alt="Muhammad Adil in a navy suit on a dark neon magenta developer banner. Hello, I'm Muhammad Adil. Building practical software and AI systems." width="100%" />
 
-  <a href="https://github.com/Adil307?tab=repositories"><img alt="Explore repositories" src="https://img.shields.io/badge/EXPLORE_REPOSITORIES-1591bd?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/Adil307/AxiomBraid"><img alt="Explore AxiomBraid" src="https://img.shields.io/badge/FEATURED_PROJECT-AxiomBraid-8b5cf6?style=for-the-badge" /></a>
+  <br />
+  <strong>Software Developer · Python &amp; .NET · Applied AI Engineering</strong>
 </div>
 
 <p align="center">
