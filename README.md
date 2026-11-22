@@ -38,18 +38,11 @@
 
 ## 01 / About Me
 
-<table><tr>
-<td width="55%" valign="top">
-  <img src="assets/about-code.svg" alt="About me, presented as a code snippet" width="100%" />
-</td>
-<td width="45%" valign="top">
-  <img src="assets/about-workspace.svg" alt="A dark developer workspace illustration" width="100%" />
-</td>
-</tr></table>
+<div align="center">
+  <img src="assets/animated-id-v2.gif" width="100%" alt="Animated hanging neon developer ID card for Muhammad Adil. A mouse pointer pulls the lanyard card down, releases it, and it swings gently back. On the left: .NET development, Python, AI, machine learning and data analysis." />
+</div>
 
-I’m **Muhammad Adil**, a software developer working on .NET applications, Python tools, backend systems and applied AI. I prefer reliable implementations over exaggerated demos: **define a problem, establish a baseline, test edge cases, measure results, and document limitations.**
-
-I’m also the founder of **AxiomBraid** and **ROHI**, and the Founder & Chairman of **Global Learning Community for Students (GLCS)** and **Smile of Tomorrow**.
+I work across **.NET full-stack development, Python, applied AI, data analysis and machine learning**. I build practical software, research tools and open-source projects with an emphasis on reliability, clear reasoning and measurable results.
 
 ## 02 / Connect
 
