@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="430" viewBox="0 0 650 430" role="img" aria-labelledby="title"><title id="title">About Muhammad Adil, developer profile in code format</title>
+<rect width="650" height="430" rx="16" fill="#0b1220" stroke="#31405d"/><path d="M0 46H650" stroke="#283652"/><circle cx="25" cy="23" r="6" fill="#e17b93"/><circle cx="46" cy="23" r="6" fill="#e0bc7a"/><circle cx="67" cy="23" r="6" fill="#65ccb7"/><text x="90" y="28" fill="#8194b2" font-family="monospace" font-size="16">about-adil.ts</text>
+<g font-family="Consolas,Menlo,monospace" font-size="20"><text x="29" y="89" fill="#9caef9">const <tspan fill="#d6e5fc">adil</tspan> <tspan fill="#8fb1d8">=</tspan> <tspan fill="#dce9fd">{</tspan></text>
+<text x="53" y="132"><tspan fill="#85ddd2">name:</tspan> <tspan fill="#f3d2a0">"Muhammad Adil",</tspan></text>
+<text x="53" y="169"><tspan fill="#85ddd2">role:</tspan> <tspan fill="#f3d2a0">"Software Developer",</tspan></text>
+<text x="53" y="206"><tspan fill="#85ddd2">focus:</tspan> <tspan fill="#dce9fd">[</tspan></text>
+<text x="81" y="243" fill="#f3d2a0">"Backend engineering",</text>
+<text x="81" y="280" fill="#f3d2a0">"Applied AI",</text>
+<text x="81" y="317" fill="#f3d2a0">"Reliable systems"</text>
+<text x="53" y="354" fill="#dce9fd">],</text>
+<text x="29" y="394" fill="#dce9fd">};</text></g>
+</svg>

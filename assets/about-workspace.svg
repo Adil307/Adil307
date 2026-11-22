@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="430" viewBox="0 0 500 430" role="img" aria-labelledby="title"><title id="title">Abstract evening development workspace with software architecture monitors</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1425"/><stop offset="1" stop-color="#253255"/></linearGradient><linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#304c76"/><stop offset="1" stop-color="#172744"/></linearGradient></defs>
+<rect width="500" height="430" rx="16" fill="url(#bg)"/><rect x="36" y="34" width="428" height="285" rx="9" fill="#111e34" stroke="#52648a"/>
+<rect x="54" y="52" width="164" height="248" fill="url(#win)"/><rect x="229" y="52" width="216" height="248" fill="url(#win)"/>
+<g fill="#18283e"><rect x="58" y="138" width="30" height="162"/><rect x="94" y="97" width="37" height="203"/><rect x="137" y="120" width="25" height="180"/><rect x="170" y="170" width="42" height="130"/><rect x="230" y="190" width="45" height="110"/><rect x="287" y="106" width="38" height="194"/><rect x="334" y="135" width="44" height="165"/><rect x="389" y="175" width="50" height="125"/></g>
+<g stroke="#98add1" stroke-opacity=".2"><path d="M54 175H445M54 232H445M133 52V300M311 52V300"/></g><circle cx="389" cy="94" r="22" fill="#9e99d9" opacity=".22"/>
+<rect x="108" y="214" width="286" height="145" rx="11" fill="#0b1322" stroke="#7080aa"/><rect x="124" y="229" width="254" height="112" rx="5" fill="#101f34"/><rect x="135" y="241" width="232" height="5" fill="#234a67"/>
+<g stroke-width="5" stroke-linecap="round"><path d="M145 262H205" stroke="#56d6e7"/><path d="M217 262H293" stroke="#a38de3"/><path d="M153 281H233" stroke="#7894bc"/><path d="M246 281H350" stroke="#63c0b8"/><path d="M145 301H190" stroke="#b5a1db"/><path d="M201 301H325" stroke="#5f88b4"/><path d="M153 321H274" stroke="#6bc6d8"/></g>
+<path d="M92 360H407L440 389H59Z" fill="#34415d"/><path d="M168 367H340" stroke="#6f809d" stroke-width="3"/><rect x="221" y="366" width="55" height="11" rx="3" fill="#53627c"/>
+<path d="M70 400H429" stroke="#7d88a0" stroke-width="2"/><rect x="23" y="407" width="454" height="15" rx="4" fill="#111b2b"/>
+<rect x="397" y="349" width="33" height="48" rx="6" fill="#26354b"/><path d="M412 348V329" stroke="#5fada6" stroke-width="4"/><path d="M411 335Q382 322 388 306Q411 309 411 335" fill="#558981"/><path d="M414 335Q439 309 450 322Q446 340 414 335" fill="#4b7f78"/>
+</svg>
